@@ -5,8 +5,13 @@ RAG based app is created for financial literacy. This project utilises Gemini LL
 3. Create a venv and Install dependencies using `requirements.txt`
 4. create a `.env` file and mention your Gemini API key in it.
 5. Then run python files:
+   
 a. `ingest.py`, and check the database at `http://localhost:6333/dashboard`
+
 b. `retriever.py`
+
 c. Run `uvicorn rag:app` command on CLI, it will prompt you to go to `http://127.0.0.1:8000/`
+
+The `templates` folder contains html based front-end part.
 
 The `Data` folder contains sample pdfs, more data can be added to it, based on which the FinnoRAG will answer the user's query.
